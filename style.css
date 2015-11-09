@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    position: absolute;
+}
+
+.md-fab {
+    font-size: 32px;
+}
+
+.player {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.toolbar {
+    padding-top: 1em;
+}
+
+.upside-down {
+    transform: rotate(180deg);
+}
