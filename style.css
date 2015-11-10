@@ -3,19 +3,19 @@ body {
     position: absolute;
 }
 
-.md-fab {
-    font-size: 32px;
+.upside-down {
+    transform: rotate(180deg);
 }
 
 .player {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    height: 50%;
+}
+
+.player-container {
+    padding-top: 15em;
 }
 
 .toolbar {
     padding-top: 1em;
 }
 
-.upside-down {
-    transform: rotate(180deg);
-}
