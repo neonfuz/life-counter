@@ -2,10 +2,6 @@ body {
     text-align: center;
 }
 
-.upside-down {
-    transform: rotate(180deg);
-}
-
 .player {
     height: 50vh;
     outline: 1px solid black;
@@ -20,4 +16,10 @@ body {
 
 .md-fab {
     width: 30vw;
+}
+
+@media all and (orientation:portrait) {
+    .upside-down {
+        transform: rotate(180deg);
+    }
 }
