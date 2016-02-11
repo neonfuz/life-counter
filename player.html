@@ -1,8 +1,20 @@
 <div ng-controller="Player" class="player">
-  <span class="life md-display-3">{{ life }}</span>
-  <md-fab-toolbar class="button-bar">
-    <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
-    <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
-    <md-button class="md-fab" ng-click="increment()">+</md-button>
-  </md-fab-toolbar>
+  <section class="main">
+    <span class="life md-display-3">{{ life }}</span>
+    <md-fab-toolbar class="button-bar">
+      <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
+      <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
+      <md-button class="md-fab" ng-click="increment()">+</md-button>
+    </md-fab-toolbar>
+  </section>
+  <aside>
+    <table class="history">
+      <tr>
+        <th>History</th>
+      </tr>
+      <tr ng-repeat="item in history">
+        <td>{{item.value}}</td>
+      </tr>
+    </table>
+  </aside>
 </div>
