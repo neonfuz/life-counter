@@ -3,34 +3,27 @@
   <head>
     <title>Life Counter</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
   </head>
   <body>
 
     <div ng-controller="Player" class="upside-down player">
-      <div class="player-container">
-        <h2 class="md-display-3">{{ life }}</h2>
-        <md-fab-toolbar class="toolbar">
-          <md-button class="md-fab" ng-click="increment()">+</md-button>
-          <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
-          <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
-        </md-fab-toolbar>
-      </div>
+      <span class="life md-display-3">{{ life }}</span>
+      <md-fab-toolbar class="button-bar">
+        <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
+        <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
+        <md-button class="md-fab" ng-click="increment()">+</md-button>
+      </md-fab-toolbar>
     </div>
 
-    <md-divider></md-divider>
-
     <div ng-controller="Player" class="player">
-      <div class="player-container">
-        <h2 class="md-display-3">{{ life }}</h2>
-        <md-fab-toolbar class="toolbar">
-          <md-button class="md-fab" ng-click="increment()">+</md-button>
-          <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
-          <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
-        </md-fab-toolbar>
-      </div>
+      <span class="life md-display-3">{{ life }}</span>
+      <md-fab-toolbar class="button-bar">
+        <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
+        <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
+        <md-button class="md-fab" ng-click="increment()">+</md-button>
+      </md-fab-toolbar>
     </div>
 
     <script src="bower_components/angular/angular.js"></script>
