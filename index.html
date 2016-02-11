@@ -8,23 +8,8 @@
   </head>
   <body>
 
-    <div ng-controller="Player" class="upside-down player">
-      <span class="life md-display-3">{{ life }}</span>
-      <md-fab-toolbar class="button-bar">
-        <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
-        <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
-        <md-button class="md-fab" ng-click="increment()">+</md-button>
-      </md-fab-toolbar>
-    </div>
-
-    <div ng-controller="Player" class="player">
-      <span class="life md-display-3">{{ life }}</span>
-      <md-fab-toolbar class="button-bar">
-        <md-button class="md-fab" ng-click="decrement()">&#8722;</md-button>
-        <md-button class="md-fab" ng-click="reset()">&#8634;</md-button>
-        <md-button class="md-fab" ng-click="increment()">+</md-button>
-      </md-fab-toolbar>
-    </div>
+    <div ng-include="'player.html'" class="upside-down"></div>
+    <div ng-include="'player.html'"></div>
 
     <script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-aria/angular-aria.js"></script>
